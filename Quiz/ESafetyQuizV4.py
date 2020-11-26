@@ -26,9 +26,9 @@ def random_answer():
     
     random_options = [1,2,3]
     answer1_hitbox.append((random_options[(random.randint(0,(len(random_options)-1)))]))
-    random_options.remove((answer1_hitbox[4]-1))
+    random_options.remove((answer1_hitbox[4]))
     answer2_hitbox.append((random_options[(random.randint(0,(len(random_options)-1)))]))
-    random_options.remove((answer2_hitbox[4]-1))
+    random_options.remove((answer2_hitbox[4]))
     answer3_hitbox.append((random_options[(random.randint(0,(len(random_options)-1)))]))
 
 
