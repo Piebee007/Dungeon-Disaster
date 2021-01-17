@@ -618,9 +618,7 @@ purchased_sound = pygame.mixer.Sound("PurchaseSound.wav")
 death_sound =  pygame.mixer.Sound("DeathSound.wav")
 hit_sound = pygame.mixer.Sound("HitSound.ogg")
 
-#Music: https://freesound.org/people/edwardszakal/sounds/514154/
-music = pygame.mixer.music.load ('GameMusic.mp3')
-pygame.mixer.music.play(-1)
+
 
 #This is the 2D array to create the map. It can be edited but for a fully functioning map they will need ot piece together correctly
 #TRC = TopRightCorner
@@ -1382,6 +1380,9 @@ def main_game_loop():
     
     print(player1.ID)
 
+    #Music: https://freesound.org/people/edwardszakal/sounds/514154/
+    music = pygame.mixer.music.load ('GameMusic.mp3')
+    pygame.mixer.music.play(-1)
     
     while game_loop == True:
         clock.tick(60)
@@ -1404,9 +1405,9 @@ def main_game_loop():
         player1.online_bullet_array = []
 
         if player1.ID != 0:
-            if player1.room_x_pos != player 2.room_x_pos or player1.room_y_pos != player 2.room_y_pos:
-                player1.room_x_pos = player 2.room_x_pos
-                player1.room_y_pos = player 2.room_y_pos
+            if player1.room_x_pos != player2.room_x_pos or player1.room_y_pos != player2.room_y_pos:
+                player1.room_x_pos = player2.room_x_pos
+                player1.room_y_pos = player2.room_y_pos
                 player1.x_pos = player2.x_pos
                 player1.y_pos = player2.y_pos
         
